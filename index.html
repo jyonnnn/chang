@@ -105,12 +105,14 @@
         font-style: italic; /* In nghiêng */
     }
 
-    .new-banner-container {
-        display: flex;
-        justify-content: center;
-        gap: 10px; /* Khoảng cách giữa các ảnh */
-        padding: 10px 0;
-    }
+.new-banner-container {
+    display: flex;
+    justify-content: flex-start; /* Đẩy các banner về bên trái */
+    gap: 10px; /* Khoảng cách giữa các ảnh */
+    padding: 10px 0;
+    overflow-x: auto; /* Cho phép cuộn ngang */
+    white-space: nowrap; /* Giữ các banner trên 1 dòng */
+}
 
     .new-banner img {
         width: 80px; /* Kích thước nhỏ gọn */
